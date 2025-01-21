@@ -1,0 +1,238 @@
+/* cómo se va a ver el cuerpo */
+
+html, body{
+    background: -webkit-linear-gradient(bottom, #3d0049,#4d2655); 
+    color: white;
+    overflow-x: hidden;
+    font-family: "Dancing Script", cursive;
+    height: 100vh;
+    width: 100vw;
+}
+/* cómo se va a ver la cabecera, incluyo efectos de neon con text y box shadow*/
+
+.cabecera{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 300px;
+    height: 100px;
+    border: 4px, solid, #e033ff;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.4em #ea7bfe, 0 0 0.4em #e033ff ;
+    box-shadow: inset 0 0 1em 0 #e033ff, 0 0 1em 0 #e033ff;   
+}
+/* ajusto el texto de la caja y hago que se desvanezca y vuelva como antes cada 5 segundos*/
+
+.cabecera h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    animation: parpadear 3s infinite;
+}
+/* ajusto los tréboles */
+
+.cabecera p{
+    padding-top: 10px;
+    text-shadow: 0 0 0.4em #ffffff, 0 0 0.4em #ffffff;
+}
+
+/* animación para que parpadeen */
+
+#t1{
+    animation: parpadear 0.5s infinite backwards steps(3);
+}
+
+#t2{
+    animation: parpadear 0.5s infinite backwards steps(3);
+}
+
+/* al poner el raton en la caja, cambia */
+.cabecera:hover{
+    background: #e033ff;
+    color: #211524;
+    text-shadow: none;
+    border: #211524;
+}
+
+/* 100% de ancho para el main */
+
+main{
+    width: 100vw;
+}
+
+/* configuro el texto de la banca */
+
+#banca  h1{
+    margin: auto;
+    margin-bottom: 10px;
+    color: white;
+    width: 250px;
+    border: 4px, solid, #e033ff;
+    padding: 3px;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.1em #ea7bfe, 0 0 0.2em #e033ff ;
+    box-shadow: inset 0 0 0.4em 0 #e033ff, 0 0 0.4em 0 #e033ff;
+}
+
+h2{
+    color: white;
+    width: 170px;
+    border: 4px, solid, #e033ff;
+    padding: 3px;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.1em #ea7bfe, 0 0 0.2em #e033ff ;
+    box-shadow: inset 0 0 0.4em 0 #e033ff, 0 0 0.4em 0 #e033ff;
+}
+
+/* tamaño de las imágenes, cartas y botones */
+img{
+    width: 50px;
+    height: 150px;
+}
+
+.cartas{
+    position: relative;
+    width: 100px;
+    left: 20px;
+    margin-left: -75px;
+    padding-top: 15px;
+}
+
+#banca-cartas{
+    height: 220px;
+}
+
+#boton{
+    padding-bottom: 20px;
+}
+
+/* ajusto el texto del resultado debajo de sus divs*/
+
+#ganador,#ganador2,#ganador3,#ganador4,#ganador5,#ganador6{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0 0 0.1em #ea7bfe, 0 0 0.2em #e033ff ;
+    
+}
+
+
+#divJugadores{
+    width: 100vw;
+}
+
+
+/* doy efecto al boton de nuevo juego */
+
+#bt-nuevo,#bt-apuesta{
+    height: 70px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+ 
+    font-size: 1em;
+    margin-right: 5px;
+    margin-top: 20px;
+    left: 0px;
+
+    color: #e033ff;
+    background: #4d2655;
+    border: 3px, solid, #e033ff;
+    border-radius: 0.25em;
+    text-shadow: none;
+    text-shadow: 0 0 0.1em #211524, 0 0 0.2em #211524; 
+    box-shadow: inset 0 0 0.4em 0 #211524, 0 0 0.4em 0 #211524;  
+}
+
+/* al pasar el ratón por encima cambia */
+
+#bt-nuevo:hover{
+    height: 70px;
+    width: 100px;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 5px;
+    margin-top: 20px;
+    left: 0px;  
+    color: #211524;
+    background: #e033ff;
+    border: 3px, solid, #211524;
+    border-radius: 0.25em;
+    text-shadow: none;
+    text-shadow: 0 0 0.1em #ea7bfe, 0 0 0.2em #e033ff; 
+    box-shadow: inset 0 0 1em 0 #e033ff, 0 0 1em 0 #e033ff;
+    
+}
+
+/* doy efecto a todos los botones de pedir y pasar */
+
+
+#bt-pedir,#bt-pedir2,#bt-pedir3,#bt-pedir4,#bt-pedir5,#bt-pedir6, #bt-pasar,#bt-pasar2,#bt-pasar3,#bt-pasar4,#bt-pasar5,#bt-pasar6{
+    height: 60px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 5px;
+    margin-top: 20px;
+    left: 0px;
+    color: white;
+    border: 1px, solid, #e033ff;
+    padding: 3px;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.1em #ea7bfe, 0 0 0.2em #e033ff ;
+    box-shadow: inset 0 0 0.4em 0 #e033ff, 0 0 0.4em 0 #e033ff;
+}
+
+/* al pasar el ratón por encima cambian */
+
+#bt-pedir:hover,#bt-pedir2:hover,#bt-pedir3:hover,#bt-pedir4:hover,#bt-pedir5:hover,#bt-pedir6:hover, 
+#bt-pasar:hover,#bt-pasar2:hover,#bt-pasar3:hover,#bt-pasar4:hover,#bt-pasar5:hover,#bt-pasar6:hover{
+
+    height: 60px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
+ 
+    font-size: 1em;
+    margin-right: 5px;
+    margin-top: 20px;
+    left: 0px;
+
+    color: white;
+    background: #e033ff;
+    border: 3px, solid, #211524;
+    border-radius: 0.25em;
+    text-shadow: none;
+    text-shadow: 0 0 0.1em #ea7bfe, 0 0 0.2em #e033ff; 
+    box-shadow: inset 0 0 0.4em 0 #e033ff, 0 0 0.4em 0 #e033ff;
+}
+
+/* sirve para crear animaciones complejas el keyframe */
+
+@keyframes parpadear{
+    to{
+        color: #e033ff;
+        text-shadow: none;
+    }
+}
+
+
+
+
+
+
+
+

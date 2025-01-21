@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- enlazo con boostrap y con el css  -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/blackjackAvanzado/estilo.css">
+    
+</head>
+<body>
+
+    <!-- creo la cabecera con dos treboles y blackjack que parpadearán, uso boostrap para dar forma y encajar divs  -->
+
+    <header class="cabecera"><p id="t1">♣</p><h1>Blackjack</h1><p id="t2">♣</p></header>
+
+    <main class="container justify-content-center">
+     
+    <!-- botón de nuevo juego -->
+
+        <div class="row mt-2">
+            <div  id="boton" class="col text-center">
+                <button id="bt-nuevo" class="btn">Nuevo Juego</button>
+                
+                
+            </div>
+        </div>
+
+    <!-- div de la banca -->
+
+        <div id="banca" class="container row  col text-center">
+            <div  class="col text-center ">
+                <h1>Banca - <small id ="puntosBanca">0</small></h1>
+                <div id="banca-cartas">
+                    
+                </div>
+            </div>
+        </div>    
+        
+    <!-- div de los 6 jugadores, cada jugador tiene el nombre, su puntuación, debajo las cartas, debajo de las cartas
+    están los botones y debajo de los botones está el resultado de si gana o pierde  -->
+       
+        <div id = "divJugadores" class="container row col text-center">
+            
+
+            <div id="divJugador" class="col-2">
+                <h2>Jugador 1- <small id="marcador">0</small> </h2>
+                <div id="jugador-cartas"></div> 
+                    <div class = "row">
+                        <button id="bt-pedir" class="btn" data-toggle="modal" data-target="#modalApuesta">Pedir Carta</button>
+                        <button id="bt-pasar" class="btn">Pasar</button>  
+                    </div>
+                    <div id="ganador"></div>
+
+                    <div id="apuestaJ1"></div>
+                    <div id="dineroJ1"></div>
+            </div>   
+            
+            <div id="divJugador2" class="col-2">
+                <h2>Jugador 2- <small id="marcador2">0</small></h2>
+                <div id="jugador-cartas2">
+                    
+                </div>   
+                <div class = "row">
+                    <button id="bt-pedir2" class="btn" data-toggle="modal" data-target="#modalApuesta">Pedir Carta</button>
+                    <button id="bt-pasar2" class="btn">Pasar</button>  
+                </div>  
+                <div id="ganador2"></div>
+
+                <div id="apuestaJ2"></div>
+                <div id="dineroJ2"></div>
+
+            </div> 
+
+            <div id="divJugador3" class="col-2">
+                <h2>Jugador 3- <small id="marcador3">0</small></h2>
+                <div id="jugador-cartas3">
+               
+                </div> 
+                <div class = "row">
+                    <button id="bt-pedir3" class="btn" data-toggle="modal" data-target="#modalApuesta">Pedir Carta</button>
+                    <button id="bt-pasar3" class="btn">Pasar</button>  
+                </div>  
+                <div id="ganador3"></div>
+                
+                <div id="apuestaJ3"></div>
+                <div id="dineroJ3"></div>
+
+            </div> 
+
+            <div id="divJugador4" class="col-2">
+                <h2>Jugador 4- <small id="marcador4">0</small></h2>
+                <div id="jugador-cartas4">
+                 
+                </div>  
+                <div class = "row">
+                    <button id="bt-pedir4" class="btn" data-toggle="modal" data-target="#modalApuesta">Pedir Carta</button>
+                    <button id="bt-pasar4" class="btn">Pasar</button> 
+                </div>   
+                <div id="ganador4"></div>
+
+                <div id="apuestaJ4"></div>
+                <div id="dineroJ4"></div>
+
+            </div> 
+
+            <div id="divJugador5" class="col-2">
+                <h2>Jugador 5- <small id="marcador5">0</small></h2>
+                <div id="jugador-cartas5">
+               
+                </div>   
+                <div class = "row">
+                    <button id="bt-pedir5" class="btn" data-toggle="modal" data-target="#modalApuesta">Pedir Carta</button>
+                    <button id="bt-pasar5" class="btn">Pasar</button>  
+                </div>  
+                <div id="ganador5"></div>
+
+                <div id="apuestaJ5"></div>
+                <div id="dineroJ5"></div>
+
+            </div> 
+
+            <div id="divJugador6" class="col-2">
+                <h2>Jugador 6- <small id="marcador6">0</small></h2>
+                <div id="jugador-cartas6">
+                
+                </div>   
+                <div class = "row">
+                    <button id="bt-pedir6" class="btn" data-toggle="modal" data-target="#modalApuesta">Pedir Carta</button>
+                    <button id="bt-pasar6" class="btn">Pasar</button> 
+                </div>  
+                <div id="ganador6"></div>
+
+                <div id="apuestaJ6"></div>
+                <div id="dineroJ6"></div>
+                
+            </div> 
+
+        
+        </div>
+ 
+    </main>
+    <!-- enlazo con el javascript y underscore -->
+
+    <script src="JS\blackjackAvanzado\underscore.js"></script>
+    <script src="JS\blackjackAvanzado\main.js"></script>
+
+</body>
+</html>
